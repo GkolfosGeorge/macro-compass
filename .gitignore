@@ -1,0 +1,23 @@
+# ─────────────────────────────────────────────
+#  Macro Analyzer — .gitignore
+# ─────────────────────────────────────────────
+
+# Cache data (yfinance downloads — regenerated automatically)
+data/
+macro_cache/
+
+# API Keys
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
