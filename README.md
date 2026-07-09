@@ -51,8 +51,8 @@ The analyzer monitors 9 macro signals across commodities, rates, credit, volatil
 ## Quickstart
 
 ```bash
-git clone https://github.com/gkolfos/macroscript.git
-cd macroscript
+git clone https://github.com/GkolfosGeorge/macro-compass.git
+cd macro-compass
 pip install -r requirements.txt
 ```
 
@@ -122,7 +122,7 @@ Without a key, the analyzer runs on the remaining 7 signals with no interruption
 ## Project structure
 
 ```
-macroscript/                       # this folder IS the repo root
+macro-compass/                     # this folder IS the repo root
 ├── macro_analyzer.py        # Core engine — data loading, signal computation, phase classification
 ├── macro_charts.py          # Interactive charts (Plotly)
 ├── macro_charts_print.py    # Print-ready charts (Matplotlib, 300dpi)
@@ -138,12 +138,18 @@ All modules use flat, self-contained imports (e.g. `from macro_analyzer import M
 
 ---
 
+## Related Projects
+
+`macro-compass` is part of a broader personal quant ecosystem — sibling projects that consume or complement its regime signals:
+
+- **Portfolio Analyzer** — position sizing and portfolio construction with a macro overlay. *(Live — [portfolio-analytics-toolkit](https://github.com/GkolfosGeorge/portfolio-analytics-toolkit))*
+- **Trading System — Mean Reversion** — regime-aware mean reversion strategy with backtesting, built on top of `macro-compass` signals. *(Launching shortly)*
+
 ## Roadmap
 
-- [ ] Trading system integration — regime-aware stock scoring and backtesting
-- [ ] Commodity Analyzer — dedicated signal engine for metals and energy
+- [ ] Trading System — Momentum/Hype Strategy — a second regime-aware trading script, complementing the mean-reversion system by capturing speculative, hype-driven momentum and herd behavior
+- [ ] Commodity Analyzer — dedicated signal engine for agricultural commodities (grains, rice, lumber, fertilizers) — energy and metals are already covered natively within `macro-compass`
 - [ ] Sector Rotation Scorer — momentum-weighted sector allocation
-- [ ] Portfolio Analyzer — position sizing with macro overlay
 
 ---
 
@@ -157,7 +163,7 @@ All rights reserved. This repository is public for portfolio and demonstration p
 
 **George Gkolfos**  
 Quantitative Investment Systems | Macro-Driven Frameworks  
-[LinkedIn](https://linkedin.com/in/giorgos-gkolfos-243122119/) · [GitHub](https://github.com/gkolfos)
+[LinkedIn](https://linkedin.com/in/giorgos-gkolfos-243122119/) · [GitHub](https://github.com/GkolfosGeorge)
 
 ---
 
